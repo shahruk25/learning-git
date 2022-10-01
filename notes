@@ -1,4 +1,4 @@
-techmonkey@techMonkey:~/techMonkey/skill/learning-git$ git add . // this to commit all files in the current dir. if you want to add file from all the dir this is the
+techmonkey@techMonkey:~/techMonkey/skill/learning-git$ git add . // this to commit all files in the current dir. if you want to add file from all the dir then git add -A
 techmonkey@techMonkey:~/techMonkey/skill/learning-git$ git status
 On branch master
 
@@ -30,3 +30,43 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 techmonkey@techMonkey:~/techMonkey/skill/learning-git$
+------------------------------------------------------------------------------
+techmonkey@techMonkey:~/techMonkey/skill/learning-git$ git add .
+techmonkey@techMonkey:~/techMonkey/skill/learning-git$ git commit -m "bootsrap project"
+[master (root-commit) 2855b81] bootsrap project
+ 5 files changed, 32 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 index.js
+ create mode 100644 main.css
+ create mode 100644 notes
+ create mode 100644 test/test.js
+techmonkey@techMonkey:~/techMonkey/skill/learning-git(master)$ git log // to see commit history
+commit 2855b81e3bd3dfffc1496b848acd12cd4874b39b (HEAD -> master)
+Author: shahruk25 <shahruk25@gmail.com>
+Date:   Sat Oct 1 23:52:56 2022 +0530
+
+    bootsrap project
+techmonkey@techMonkey:~/techMonkey/skill/learning-git(master)$ 
+--------------------------------------------------------------------------- git show
+techmonkey@techMonkey:~/techMonkey/skill/learning-git(master)$ git show 2855b81e3bd3dfffc1496b848acd12cd4874b39b // to what in the current commit
+commit 2855b81e3bd3dfffc1496b848acd12cd4874b39b (HEAD -> master)
+Author: shahruk25 <shahruk25@gmail.com>
+Date:   Sat Oct 1 23:52:56 2022 +0530
+
+    bootsrap project
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/index.js b/index.js
+new file mode 100644
+index 0000000..e69de29
+diff --git a/main.css b/main.css
+new file mode 100644
+index 0000000..e69de29
+diff --git a/notes b/notes
+new file mode 100644
+index 0000000..ce1565a
+--- /dev/null
++++ b/notes
+------------------------------------------------------------------------------- git amend
